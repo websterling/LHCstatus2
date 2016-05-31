@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>LHC Status</title>
+<script type="text/javascript" src="update.js"></script> 
+</head>
+
+<body onload='update("http://vistar-capture.web.cern.ch/vistar-capture/lhc1.png")'>
+<!---<body onload='update()'>-->
+<div id="main">
+<table>
+<tr>
+<td id="menu_td">
+<p class="centered">
+<img id="logo" src="lhc.png" width="146" height="188" alt="" />
+</p>
+
+<form id ="menu" action="javascript:void(0);">
+<p>
+<span class="heading">Dashboard</span>
+<br />
+
+<input type="radio" name="r" value="Overview" id="Overview"
+ onclick='update("http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard.png")' /><label for="Overview">Overview</label>
+<br />&nbsp;&nbsp;&nbsp;&nbsp;Hours/Days<br />
+
+<input type="radio" name="r" value="1Hour" id="Hour1"
+ onclick='update("http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard0.png")' /><label for="Hour1">1hr</label>
+
+<input type="radio" name="r" value="6Hours" id="Hours6"
+ onclick='update("http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard1.png")' /><label for="Hours6">6hr</label>
+
+<input type="radio" name="r" value="12Hours" id="Hours12"
+ onclick='update("http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard2.png")' /><label for="Hours12">12hr</label>
+<br />
+
+<input type="radio" name="r" value="1Day" id="Day1"
+ onclick='update("http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard3.png")' /><label for="Day1">1d</label>&nbsp;
+
+<input type="radio" name="r" value="2Days" id="Days2"
+ onclick='update("http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard4.png")' /><label for="Days2">2d</label>&nbsp;
+
+<input type="radio" name="r" value="7Days" id="Days7"
+ onclick='update("http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard5.png")' /><label for="Days7">7d</label>
+<br />
+
+
+<span class="heading">LHC</span>
+<br />
+
+<input type="radio" name="r" value="Page1" checked="checked" id="Page1"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/lhc1.png")' /><label for="Page1">Page1</label>
+ <br />
+
+<input type="radio" name="r" value="Statusop" id="Statusop"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/lhc3.png")' /><label for="Statusop">Operation</label>
+<br />
+
+<input type="radio" name="r" value="Config" id="Config"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/lhcconfig.png")' /><label for="Config">Config</label>
+<br />
+
+<input type="radio" name="r" value="Cryo" id="Cryo"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/lhc2.png")' /><label for="Cryo">Cryo</label>
+<br />
+
+<input type="radio" name="r" value="Coll1" id="Coll1"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/lhccolli1.png")' /><label for="Coll1">B1 Collimators</label>
+ <br />
+
+<input type="radio" name="r" value="Coll2" id="Coll2"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/lhccolli2.png")' /><label for="Coll2">B2 Collimators</label>
+<br />
+
+<input type="radio" name="r" value="Planning" id="Planning"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/lhccoord.png")' /><label for="Planning">Planning</label>
+<br />
+
+<input type="radio" name="r" value="Magnets" id="Magnets"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/lhcexpmag.png")' /><label for="Magnets">Magnets</label>
+<br />
+
+<input type="radio" name="r" value="Luminosity" id="Luminosity"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/lhclumi.png")' /><label for="Luminosity">Luminosity</label>
+<br />
+
+<input type="radio" name="r" value="Dump" id="Dump"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/lhcbds.png")' /><label for="Dump">Dump</label>
+<br />
+
+<span class="heading">Injectors</span>
+<br />
+
+<input type="radio" name="r" value="SPS" id="SPS"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/sps1.png")' /><label for="SPS">SPS</label>
+<br />
+
+<input type="radio" name="r" value="CPS" id="CPS"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/cps.png")' /><label for="CPS">CPS</label>
+<br />
+
+<input type="radio" name="r" value="PSB" id="PSB"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/psb.png")' /><label for="PSB">PSB</label>
+<br />
+
+<input type="radio" name="r" value="Linac II" id="LinacII"
+ onclick='update("http://vistar-capture.web.cern.ch/vistar-capture/lin.png")' /><label for="LinacII">Linac II</label>
+<br />
+<br />
+</p>
+
+<p class="centered">
+<input type="button" name="Update" value="Update Current View" onclick='update()' />
+</p>
+
+</form>
+</td>
+
+<td>
+<img id="data" src="blank.jpg" width="900" height="675" alt="" />
+</td>
+</tr>
+</table>
+
+</div>
+
+</body>
+</html>    

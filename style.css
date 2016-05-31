@@ -1,0 +1,36 @@
+body {
+    color: white;
+    background:  black;
+    font-family: Lucida Console, Verdana;
+    font-weight: bold;
+    font-size:0.8em;
+}
+
+div#main {
+    background: black;
+    margin:auto;
+    width:1110px;
+    padding:2em;
+    border:3px inset #777
+}
+
+td#menu_td{
+    width:255px;
+}
+
+img#data{
+    border:1px solid #fff;
+}
+
+p.centered{
+    text-align:center;
+    margin:-0.6em 0 0 0;
+    padding:0 2em 0 0;
+}
+
+span.heading{
+    display:block;
+    text-decoration:underline;
+    margin-top:0.8em;
+    margin-bottom:-1.2em;
+}
