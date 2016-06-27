@@ -55,6 +55,6 @@ function update(url) {
 function autoupdate() {
     if (document.querySelector('input[name = "r"]:checked').value == "Page1") {
         update();        
-        setTimeout(autoupdate, 60000);
     }
+    setTimeout(autoupdate, 60000);
 }
