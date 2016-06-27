@@ -24,13 +24,8 @@ img#data{
 
 p.centered{
     text-align:center;
-    margin:-0.6em 0 0 0;
-    padding:0 2em 0 0;
 }
 
-span.heading{
-    display:block;
+span{
     text-decoration:underline;
-    margin-top:0.8em;
-    margin-bottom:-1.2em;
 }
