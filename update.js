@@ -20,8 +20,8 @@ var urls = {
     "SPS": "http://vistar-capture.web.cern.ch/vistar-capture/sps1.png",
     "CPS": "http://vistar-capture.web.cern.ch/vistar-capture/cps.png",
     "PSB": "http://vistar-capture.web.cern.ch/vistar-capture/psb.png",
-    "LinacII": "http://vistar-capture.web.cern.ch/vistar-capture/lin.png"
-};
+    "LinacII": "http://vistar-capture.web.cern.ch/vistar-capture/lin.png"};
+
 
 window.onload = function () {
     var rbuttons = document.getElementsByName("r");
@@ -42,7 +42,6 @@ function update(url) {
     if (!url) {
         url = starturl;
     } else {
-
 	url = urls[url];
     }
 
@@ -51,6 +50,7 @@ function update(url) {
     document.getElementById('data').src = url + now;
     starturl = url;
 }
+
 
 function autoupdate() {
     if (document.querySelector('input[name = "r"]:checked').value == "Page1") {
