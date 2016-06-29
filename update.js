@@ -1,12 +1,12 @@
 var starturl = "http://vistar-capture.web.cern.ch/vistar-capture/lhc1.png";
 var urls = {
     "Overview": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard.png",
-    "Hour1": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard0.png",
-    "Hours6": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard1.png",
-    "Hours12": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard2.png",
-    "Day1": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard3.png",
-    "Days2": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard4.png",
-    "Days7": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard5.png",
+    "1Hour": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard0.png",
+    "6Hours": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard1.png",
+    "12Hours": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard2.png",
+    "1Day": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard3.png",
+    "2Days": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard4.png",
+    "7Days": "http://lhcdashboard-images.web.cern.ch/lhcdashboard-images/images/lhc/prod/dashboard5.png",
     "Page1": "http://vistar-capture.web.cern.ch/vistar-capture/lhc1.png",
     "Statusop": "http://vistar-capture.web.cern.ch/vistar-capture/lhc3.png",
     "Config": "http://vistar-capture.web.cern.ch/vistar-capture/lhcconfig.png",
@@ -20,7 +20,7 @@ var urls = {
     "SPS": "http://vistar-capture.web.cern.ch/vistar-capture/sps1.png",
     "CPS": "http://vistar-capture.web.cern.ch/vistar-capture/cps.png",
     "PSB": "http://vistar-capture.web.cern.ch/vistar-capture/psb.png",
-    "LinacII": "http://vistar-capture.web.cern.ch/vistar-capture/lin.png"};
+    "Linac II": "http://vistar-capture.web.cern.ch/vistar-capture/lin.png"};
 
 
 window.onload = function () {
