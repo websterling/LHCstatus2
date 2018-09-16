@@ -26,6 +26,29 @@ p.centered{
     text-align:center;
 }
 
+p#bottom{
+    margin-top:-1.5em;
+}
+
 span{
     text-decoration:underline;
+}
+
+
+div#announcer_events{
+    padding:2em;
+    height:510px;
+    width:847px;
+    z-index:1000;
+    position:absolute;
+    top:0;
+    left:0;
+    background: black;
+    border: 1px solid #fff;
+    visibility:hidden;
+}
+
+div#announcement{
+    font-size:larger;
+    color:#f55;
 }

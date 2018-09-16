@@ -33,8 +33,59 @@ window.onload = function () {
     document.getElementById("update").onclick = function () {
         update();
     }	
+    document.getElementById('announcer').onclick = function () {
+        toggleAnnouncer();
+    }
+    document.getElementById('list_events').onclick = function () {
+        toggleEventsList();
+    }
     update();
     autoupdate();
+}
+
+function toggleAnnouncer(){
+    var announcer = document.getElementById('announcer').checked;
+    if(announcer == true){
+        document.getElementById('announcer_label').style.color = '#0f2';
+        init();
+     }else{
+        location.reload(true);
+     }
+}
+
+function toggleEventsList(){
+    var list_events = document.getElementById('list_events').checked;
+    var events_div = document.getElementById('announcer_events');
+    var element = document.getElementById('data');
+
+    var cumulativeOffset = function(element) {
+        var topp = 0, left = 0;
+        do {
+            topp += element.offsetTop  || 0;
+            left += element.offsetLeft || 0;
+            element = element.offsetParent;
+        } while(element);
+
+        return {
+            topp: topp,
+            left: left
+         };
+        };
+
+    if(list_events == true){
+        var offsets = cumulativeOffset(element);
+        topp = offsets.topp;
+        topp = topp + 81;
+        topp = topp + 'px';
+        left = offsets.left;
+        left = left + 1;
+        left = left + 'px';
+        events_div.style.top = topp;
+        events_div.style.left = left;
+        events_div.style.visibility = 'visible';
+    }else{
+        events_div.style.visibility = 'hidden';
+    }
 }
 
 

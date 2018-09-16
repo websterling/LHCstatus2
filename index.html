@@ -3,10 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <title>LHC Status</title>
+<meta http-equiv="Pragma" content="no-cache" /> 
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="update.js"></script> 
+<script type="text/javascript" src="announcer.js"></script> 
 </head>
-<body>	
+<body>
 <div id="main">
 <table>
 <tr>
@@ -66,7 +68,11 @@
 <br />
 </p>
 
-<p class="centered">
+<p id="bottom">
+<input id="announcer" type="checkbox" name="announcer" /><label id="announcer_label" for="announcer">Announcer</label><br />
+<input id="list_events" type="checkbox" name="list_events" /><label for="list_events">List Events</label>
+<br />
+<br />
 <input type="button" name="Update" value="Update Current View" id="update" />
 </p>
 
@@ -79,6 +85,18 @@
 </tr>
 </table>
 
+</div>
+
+<div id="announcer_events">
+<div id="announcement">
+<p class="error">The Announcer has not been started.</p>
+</div>
+<div id="events_list">
+<h3>Event History</h3>
+<ul id="history_list">
+<li>Waiting for events...</li>
+</ul>
+</div>
 </div>
 
 </body>
