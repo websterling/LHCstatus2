@@ -4,7 +4,7 @@
  *  Purpose:  LHC Announcer
  *
  *  Author:   Stephen Page
- *  modified by George S. Williams
+ *  modified by George S. Williams 09/18 & added to lhcstatus
  */
 
 "use strict";
@@ -167,6 +167,7 @@ function update_page()
 
 function play_announcement(url, url_mp3)
 {
+    if(audio_state != 'ON'){return;}
     document.getElementById('announcement').innerHTML
         = '<audio id="audio" autoplay onended="get_data()" onerror="get_data()">' +
           '<source src="' + url     + '"/>' +

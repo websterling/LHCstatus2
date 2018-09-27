@@ -21,6 +21,7 @@ var urls = {
     "CPS": "http://vistar-capture.web.cern.ch/vistar-capture/cps.png",
     "PSB": "http://vistar-capture.web.cern.ch/vistar-capture/psb.png",
     "Linac II": "http://vistar-capture.web.cern.ch/vistar-capture/lin.png"};
+var audio_state = 'ON';
 
 
 window.onload = function () {
@@ -28,6 +29,12 @@ window.onload = function () {
     for (var i = 0, max = rbuttons.length; i < max; i++) {
         rbuttons[i].onclick = function() {
         update(this.value);
+        }
+    }
+    var abuttons = document.getElementsByName("a");
+    for (var i = 0, max = abuttons.length; i < max; i++) {
+        abuttons[i].onclick = function() {
+        audio_state = this.value;
         }
     }
     document.getElementById("update").onclick = function () {
