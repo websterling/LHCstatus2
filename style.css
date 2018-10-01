@@ -52,3 +52,5 @@ div#announcement{
     font-size:larger;
     color:#f55;
 }
+
+li{list-style-type:none;}

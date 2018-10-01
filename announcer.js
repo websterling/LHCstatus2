@@ -167,7 +167,7 @@ function update_page()
 
 function play_announcement(url, url_mp3)
 {
-    if(audio_state != 'ON'){return;}
+    if(audio_state == 'ON'){
     document.getElementById('announcement').innerHTML
         = '<audio id="audio" autoplay onended="get_data()" onerror="get_data()">' +
           '<source src="' + url     + '"/>' +
@@ -175,6 +175,9 @@ function play_announcement(url, url_mp3)
           '</audio>';
 
     set_volume();
+    }else{
+    get_data();
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -206,8 +209,10 @@ function add_history_item(time, message, enabled)
     // Add the event to the history
 
     history_buffer[history_index] = '<li class="' + (enabled ? 'enabled' : 'disabled') + '">' +
-                                    new Date(time / 1000).toLocaleString() +
-                                    ' ' + message + '</li>';
+
+                                    //new Date(time / 1000).toLocaleString() +
+                                    new Date(time / 1000).toLocaleString('ch-CH', {timeZone: 'Europe/Zurich', hour12: false}).split(' ')[1] +
+                                    ' &nbsp;' + message + '</li>';
 
     history_index   = (history_index + 1) % history_length;
     history_changed = true;
