@@ -20,7 +20,7 @@ var urls = {
     "SPS": "http://vistar-capture.web.cern.ch/vistar-capture/sps1.png",
     "CPS": "http://vistar-capture.web.cern.ch/vistar-capture/cps.png",
     "PSB": "http://vistar-capture.web.cern.ch/vistar-capture/psb.png",
-    "Linac II": "http://vistar-capture.web.cern.ch/vistar-capture/lin.png"};
+    "LINAC3": "http://vistar-capture.web.cern.ch/vistar-capture/lin.png"};
 var audio_state = 'ON';
 
 
@@ -39,7 +39,7 @@ window.onload = function () {
     }
     document.getElementById("update").onclick = function () {
         update();
-    }	
+    }
     document.getElementById('announcer').onclick = function () {
         toggleAnnouncer();
     }
@@ -103,7 +103,7 @@ function update(url) {
 	url = urls[url];
     }
 
-    var now = new Date(); 
+    var now = new Date();
     now = "?" + now.getTime(); // change query value so we get a real reload
     document.getElementById('data').src = url + now;
     starturl = url;
@@ -112,7 +112,7 @@ function update(url) {
 
 function autoupdate() {
     if (document.querySelector('input[name = "r"]:checked').value == "Page1") {
-        update();        
+        update();
     }
     setTimeout(autoupdate, 60000);
 }
