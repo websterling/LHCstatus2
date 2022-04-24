@@ -20,7 +20,7 @@ var urls = {
     "SPS": "http://vistar-capture.web.cern.ch/vistar-capture/sps1.png",
     "CPS": "http://vistar-capture.web.cern.ch/vistar-capture/cps.png",
     "PSB": "http://vistar-capture.web.cern.ch/vistar-capture/psb.png",
-    "LINAC3": "http://vistar-capture.web.cern.ch/vistar-capture/lin.png"};
+    "LINAC4": "http://vistar-capture.web.cern.ch/vistar-capture/ln4.png"};
 var audio_state = 'ON';
 
 
